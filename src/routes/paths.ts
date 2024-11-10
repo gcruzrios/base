@@ -6,7 +6,9 @@ export const rootPaths = {
 };
 
 export default {
-  dashboard: `/`,
+  //dashboard: `/`,
+  dashboard: `/${rootPaths.pageRoot}/dashboard`,
+
   analytics: `/${rootPaths.pageRoot}/analytics`,
   invoice: `/${rootPaths.pageRoot}/invoice`,
   schedule: `/${rootPaths.pageRoot}/schedule`,

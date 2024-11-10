@@ -133,7 +133,7 @@ const SignIn = () => {
           </Link>
         </Stack>
 
-        <Button type="submit" variant="contained" color="success" href="/" size="large" sx={{ mt: 3 }} fullWidth>
+        <Button type="submit" variant="contained" color="success" href="/base/pages/dashboard" size="large" sx={{ mt: 3 }} fullWidth>
           Sign In
         </Button>
       </Box>

@@ -23,15 +23,16 @@ const sitemap: MenuItem[] = [
   {
     id: 'dashboard',
     subheader: 'Dashboard',
-    path: '/',
+    path: paths.dashboard,
     icon: 'solar:widget-bold',
     active: true,
   },
   {
     id: 'analytics',
     subheader: 'Analytics',
-    path: '/analytics',
+    path: '/pages/analytics',
     icon: 'solar:chart-square-bold',
+    active: true,
   },
   {
     id: 'invoice',

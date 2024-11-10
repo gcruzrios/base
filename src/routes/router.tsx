@@ -21,14 +21,32 @@ const routes = [
         <App />
       </Suspense>
     ),
+    
     children: [
       {
         path: '/',
         element: (
+          <Suspense fallback={<Splash />}>
+          <Outlet />
+        </Suspense>
+        ),
+        children: [
+          {
+            index: true,
+            element: (
+            <AuthLayout>
+               <SignIn />
+          </AuthLayout>),
+          },
+        ],
+      },
+    
+    
+      {
+        path: rootPaths.pageRoot,
+        element: (
           <MainLayout>
-            
-         
-            
+              
             
             <Suspense fallback={<PageLoader />}>
               <Outlet />
@@ -37,13 +55,15 @@ const routes = [
         ),
         children: [
           {
-            index: true,
+            path: paths.dashboard,
+            //index: true,
             element: <Dashboard />,
           },
         ],
       },
       {
-        path: rootPaths.authRoot,
+        //path: rootPaths.authRoot,
+        path:rootPaths.root,
         element: (
           <Suspense fallback={<Splash />}>
             <Outlet />

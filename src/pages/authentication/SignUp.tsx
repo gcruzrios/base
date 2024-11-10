@@ -175,7 +175,7 @@ const SignUp = () => {
           }}
         />
 
-        <Button type="submit" variant="contained" color="success" size="large" sx={{ mt: 3 }} fullWidth>
+        <Button type="submit" variant="contained" href="/base/pages/dashboard" color="success" size="large" sx={{ mt: 3 }} fullWidth>
           Create account
         </Button>
       </Box>
