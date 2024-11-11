@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import Image from 'components/base/Image';
 //import SignInImage from 'assets/images/auth/signin-image.png';
-import SignInImage from 'assets/images/auth/signin-man.jpg';
-import SignUpImage from 'assets/images/auth/signup-girl.jpg';
+import SignInImage from 'assets/images/auth/intro.jpg';
+import SignUpImage from 'assets/images/auth/intro.jpg';
 
 const AuthLayout = ({ children }: PropsWithChildren) => {
   const location = useLocation();
